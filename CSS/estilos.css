@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+@font-face{
+ font-family:'Pfennig';
+ src:url(../Fuentes/Pfennig.eot);
+ src:url(../Fuentes/Pfennig.svg);
+ src:url(../Fuentes/Pfennig.ttf);
+}
+@font-face{
+ font-family:'PfennigBold';
+ src:url(../Fuentes/PfennigBold.eot);
+ src:url(../Fuentes/PfennigBold.svg);
+ src:url(../Fuentes/PfennigBold.ttf);
+ }
+@font-face{
+ font-family:'PfennigItalic';
+ src:url(../Fuentes/PfennigBoldItalic.eot);
+ src:url(../Fuentes/PfennigBoldItalic.svg);
+ src:url(../Fuentes/PfennigBoldItalic.ttf); 
+}
+
+body{
+ font-family:'Pfennig';   
+}
+h1, h2, h3, strong, b{
+   font-family:'PfennigBold';
+ }
+dfn, blockquote{
+   font-family:'PfennigItalic';
+   }
+#barra a{
+   font-family:'PfennigBold';
+   text-decoration:none;
+   }
+
+#principal{
+ background-color:rgb(153,204,153);
+ width:1000px;
+ margin:auto;
+ font-size:1em;
+ overflow:hidden;
+ text-align:justify;
+}
+#barra{
+ background-color:#FF6600;
+ height: 50px;
+padding:5px;
+}
+#CabeceraPágina{
+ /*background-color:#99CC00;*/
+ background:-webkit-linear-gradient(top, #99CC00 5%, #99CC99 30%);
+ overflow:hidden;
+}
+/*
+.FormularioCabecera{
+ background-color:rgb(106, 160, 255);
+ border:dashed
+}
+.Cabecera2{
+ background-color:rgb(230, 62, 62 );
+ border:inset
+}
+.Cabecera3{
+ background-color:rgb(255, 156, 67  );
+ border:dotted
+}*/
+#barra ul li:nth-child(1){
+background:#FFFFFF;
+}
+#barra ul li:nth-child(2){
+background: #CCCCCC;
+}
+#barra ul li:nth-child(3){
+background: #999999;
+}
+
+header:not(#CabeceraPágina){
+ background-color:rgba(255,255,255,0.3); 
+}
+/*
+a:link {
+color: green; 
+}
+a:visited {
+color: blue; 
+}
+a:hover { 
+color:red;
+}
+a:active:visited {
+color: yellow;
+}*/
+/*article p:nth-of-type(odd){ 
+background-color:rgba(250, 250, 250, .7); 
+}
+article p:nth-of-type(even){ 
+background-color:rgba(250, 250, 250, .5);
+}*/
+#formulario{
+ background-image:url("../Imagenes/Teclas.jpg");
+ background-repeat:no-repeat; 
+ background-position:left;
+ border:20px solid;
+ border-image:url("../Imagenes/Marco.jpg") 30% stretch;
+}
+#formulario p, fieldset{
+ background-color:rgba(250,250,250,.5)
+}
+#sobreContxita img{
+margin: 10px; 
+float:left;
+box-shadow:0 0 10px #360;
+ border-radius:.5em;
+-webkit-box-reflect:right 10px
+ -webkit-gradient(linear, right center, left center, from(white), to(transparent),color-stop(75%,transparent));
+}
+#sobreContxita blockquote{
+ margin-top:3em;
+ margin-left:10em;
+ margin-right:3em;
+ line-height:1.5em;
+ }
+#sobreContxita aside{
+ width:770px;
+ height:226px;
+ background-color:rgba(250, 250, 250, .7);
+ margin:10px 10px 10px 0px;
+ float:right;
+ box-shadow:0 0 10px #360;
+ border-radius:.5em;
+ /*background:-webkit-repeating-linear-gradient(left bottom, #99CC00, #99CC99 10%);*/
+ /*background:-webkit-radial-gradient(#99CC00, #99CC99);*/
+ /*background:-webkit-radial-gradient(20% 20%, circle, #99CC00, #99CC99);*/
+ background:-webkit-radial-gradient(50% 50%, 800px 180px, #99CC99, #99CC00); 
+}
+#blog{
+ margin:0px 5px 5px 10px;
+ width:760px;
+ background-color:rgba(250, 250, 250, .7);
+ float:left;
+ box-shadow:0 0 10px #360;
+ border-radius:.5em;
+}
+#posts{
+ margin:0px 10px 5px 5px; width:210px;
+ height:500px;
+ background-color:rgba(250, 250, 250, .7);
+ float:right;
+ box-shadow:0 0 10px #360;
+ border-radius:.5em;
+}
+#posts h2{
+ text-align:center
+ }
+#barra ul li {
+ display:inline;
+ margin:10px;
+ background-color:#E4E4E4;
+ padding:5px 10px 5px 10px;
+ box-shadow:0 0 10px #360;
+ border-radius:0.5em
+}
+footer{
+ background-color:rgba(0, 80, 250, .7);
+ margin-top:5px;
+ width:1000px;
+ height:80px;
+ float:left
+}
+p{
+padding:10px
+}
+/*h2{
+ font-style:italic;
+ }*/
+/*#barra a:link{
+ font-weight:bold;
+ text-decoration:none;
+}*/
+
+/*Tamaño de la fuente*/
+#principal{
+ font-size:1em; 
+}
+#CabeceraPágina h1{
+ font-size:3.5em;
+ text-align:center;
+ line-height:0%;
+ font-variant:small-caps;
+}
+#CabeceraPágina h2{
+ font-size:250%; 
+ text-align:center;
+ line-height:0%;
+ font-variant:small-caps;
+}
+#blog h2{
+ font-size:250%;
+ text-align:center;
+ line-height:10%;
+ }
+h3{
+font-size:180%;
+ text-align:center;
+ line-height:10%;
+}
+/*
+#biografia article{ 
+ -webkit-column-count:2; /*compatibilidad para Chrome y Safari*/
+ -moz-column-count:2; /*compatibilidad para Firefox*/
+ column-count:2
+ -webkit-column-width:10em;
+ -moz-column-width:10em;
+ column-width:10em;
+ -webkit-column-rule:medium double #666666;
+ -moz-column-rule:medium double #666666;
+ column--column-rule:medium double #666666;
+ }
+*/
+/*
+p, h1, h2, h3{padding:10px}
+body{font-family:Arial, Helvetica, sans-serif}
+*/
+
+.sombra{
+  text-shadow:4px 4px 4px #333;
+  -webkit-text-stroke:2px #063;
+  -webkit-text-fill-color:#99CC00;
+ }
+
+/*biografía*/
+
+//#enPiano{
+ /*-webkit-transform:scale(2,1);*/
+ /*-webkit-transform:scale(0.8,1);*/
+ /*-webkit-transform:scale(0.8);*/
+ /*-webkit-transform:scale(-0.8);*/
+ /*-webkit-transform:scale(-1,1);*/
+ /*-webkit-transform:translate(50px,100px);*/
+ /*-webkit-transform:translate(-50px,-100px);*/
+ /*-webkit-transform:translate(50px);*/
+ /*-webkit-transform:translate(0,100px);*/
+ /*-webkit-transform:translate(150px,50px);*/
+ /*-webkit-transform:scale(-1,-1);*/
+ /*-webkit-transform: translate(150px,50px) scale(-1,-1);*/
+ /*-webkit-transform:scale(-1,-1) translate(150px,50px) ;*/
+ /*-webkit-transform:scale(-1,1) translate(-40px, 50px) skew(30deg,10deg);*/
+ /*-webkit-transform:scale(-1,1) translate(-40px, 50px) skew(30deg);*/
+/*-webkit-transform:scale(-1,1) translate(-40px, 50px) skew(-30deg);*/
+//-webkit-transform:skew(-30deg) scale(-1,1) translate(-40px, 50px) ;
+//}
+
+#enPiano{
+ float:left;
+ margin:20px;
+ box-shadow:0 0 10px #360;
+ border-radius:.5em;
+ /*-webkit-transform:rotate(45deg);*/
+ /*-webkit-transform-origin:0 100%;*/
+ /*-webkit-transform-origin:100% 100%;*/
+ /*-webkit-transform-origin:150% 100%;*/
+ /*-webkit-transform:left center;*/
+ /*-webkit-transform:right top;*/
+ /*-webkit-transform:rotate(-10deg);*/
+ /*-webkit-transform:rotate(-45deg);*/
+ /*-webkit-transform:perspective(1000px) rotateX(60deg);*/
+ /*-webkit-transform:perspective(200px) rotateX(60deg);*/
+ /*-webkit-transform:perspective(200px) rotateY(60deg);*/
+ /*-webkit-transform:perspective(200px) rotateZ(60deg);*/
+ /*-webkit-transform:perspective(200px) translateX(200px);*/
+ -webkit-transform:perspective(200px) translateZ(150px);
+ }
+
+#bio{
+ float:right;
+ margin-right:20px;
+ margin-top:20px;
+ margin-bottom:20px;
+ width:656px;
+ height:180px;
+ box-shadow:0 0 10px #360;
+ border-radius:.5em;
+ background:-webkit-radial-gradient(50% 50%, 800px 180px, #99CC99, #99CC00);
+ }
